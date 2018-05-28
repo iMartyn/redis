@@ -17,6 +17,7 @@ type Conn struct {
 	WB *proto.WriteBuffer
 
 	Inited bool
+	pooled bool
 	usedAt atomic.Value
 }
 
